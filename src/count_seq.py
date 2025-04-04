@@ -7,6 +7,6 @@ with open(inputfile, "r") as infile:
 
 # Recorre lista recien creada buscando el identificador, y guardandolo
 lineas_filtradas = [linea for linea in lineas if linea.startswith(">")]
-# Valor a guardar (linea) | Iterable (ciclo for) | Filtrado (linea)
+# RESULTADO/Valor a guardar (linea) | Iterable (ciclo for) | Filtrado (linea)
 print(f"El total de secuencias es: {len(lineas_filtradas)}")
         

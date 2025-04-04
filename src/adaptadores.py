@@ -6,7 +6,7 @@ outputfile = "../results/4_input_no_adapters.txt"
 
 # Abre y lee ("r") el archivo de entrada 4_input_adapters.txt. 
 # A la par que el 4_input_no_adapters.txt para ir escribiendo ("w") en el.
-with open(inputfile,"r") as infile, open(outputfile,"w") as outfile: # "infile" y "outfile" nombrados por convencion.
+with open(inputfile, "r") as infile, open(outputfile, "w") as outfile: # "infile" y "outfile" nombrados por convencion.
     for linea in infile:
         # Corta lo pedido
         secuencia_limpia = linea.strip()[14:]
