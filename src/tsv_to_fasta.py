@@ -6,5 +6,5 @@ outputfile = "../results/dna_sequences.faa"
 # Abrir y leer el archivo de entrada
 with open(inputfile, "r") as infile, open(outputfile, "w") as outfile:
     for linea in infile:
-        id, seq = linea.strip().split("\t")
+        id, seq = linea.strip().split("\t") # Se conoce el numero exacto de columnas
         outfile.write(f">{id}\n{seq.upper()}\n") # El metodo .upper() convierte en mayusculas 
